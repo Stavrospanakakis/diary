@@ -27,10 +27,8 @@ const App: React.FC<ILandpageProps> = props => {
     const { data } = props
     return (
         <Layout>
-            <h1>Blog</h1>
             { 
                 data.allMarkdownRemark.edges.map(post => 
-                    
                     <PostPreview
                         title={post.node.frontmatter.title}
                         date={post.node.frontmatter.date}
