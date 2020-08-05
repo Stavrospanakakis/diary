@@ -1,5 +1,5 @@
 const SidebarData = {
-    
+    id: '1',
     fullName: 'John Doe',
     profileImage: 'profile.jpg',
     property: 'Web Developer',
