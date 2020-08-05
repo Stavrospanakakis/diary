@@ -1,5 +1,14 @@
-@import '../scss/components/navbar.scss';
-@import '../scss/components/post.scss';
-@import '../scss/components/postPreview.scss';
+@import './components/navbar.scss';
+@import './components/post.scss';
+@import './components/postPreview.scss';
+@import './components/sidebar.scss';
 
-@import '../scss/pages/landpage.scss';
+@import './pages/landpage.scss';
+
+
+body {
+    margin:0 auto;
+    padding:0;
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
