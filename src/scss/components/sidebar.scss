@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+.sidebar {
+    width:300px;
+    text-align: center;
+    border: 2px solid #f1f1f1;
+    &__header {
+        background-color: $black;
+        color: $white;
+        text-transform: uppercase;
+        padding: 7px;
+        margin-bottom: $spacing-unit;
+        border-radius: 2px;
+        font-size: 14px;
+    }
+    &__profileImage {
+        width: 250px;
+        border-radius: 50%;
+    }
+    &__fullName {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &__property {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: $spacing-unit;
+    }
+    &__info {
+        text-align: justify;
+        font-size: 14px;
+        margin-bottom: $spacing-unit;
+        padding: $spacing-unit;
+    }
+    &__social-media {
+        display: inline-block;
+        &__social {
+            color:$black;
+            padding: 25px;
+            i {
+                width:25px;
+                height:25px;
+            }
+        }
+    }
+}
