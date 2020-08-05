@@ -12,7 +12,7 @@ cache:
   - yarn test
   deploy:
     provider: script
-    script: cd docs/ && yarn install && yarn run deploy
+    script: yarn && yarn run deploy
     skip_cleanup: true
     on:
       branch: gh-pages
