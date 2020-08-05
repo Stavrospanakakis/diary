@@ -5,7 +5,10 @@
   "version": "0.1.0",
   "author": "Stavros Panakakis",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.8",
     "gatsby": "^2.24.26",
+    "gatsby-cli": "^2.12.73",
     "gatsby-image": "^2.4.14",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-offline": "^3.2.21",
@@ -16,18 +19,33 @@
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-remark": "^2.8.27",
     "gatsby-transformer-sharp": "^2.5.12",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.2.2",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-test-renderer": "^16.13.1"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.8",
+    "babel-jest": "^26.2.2",
+    "prettier": "2.0.5",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
   },
   "keywords": [
     "gatsby"
   ],
+  "jest": {
+    "verbose": true,
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom"
+  },
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -36,7 +54,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
