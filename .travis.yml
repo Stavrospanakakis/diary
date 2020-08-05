@@ -10,3 +10,9 @@ cache:
   script:
   - yarn run build
   - yarn test
+  deploy:
+    provider: script
+    script: cd docs/ && yarn install && yarn run deploy
+    skip_cleanup: true
+    on:
+      branch: gh-pages
