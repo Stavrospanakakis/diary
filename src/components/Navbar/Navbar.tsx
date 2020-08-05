@@ -1,16 +1,27 @@
 import React from 'react'
+
 import NavButton from './navButton'
+import NavbarData from '../../data/Navbar'
 
 const Navbar: React.FC = () => {
+    const {title, pages} = NavbarData
     return (
-        <nav className='navbar'>
-            <ul className='navbar__ul'>
-                <NavButton 
-                    href='/'
-                    name='Home'
-                />
-            </ul>
-        </nav>
+        <div className="navbar">
+            <div className="navbar__header">
+                <a href='/' className="navbar__header__title">
+                    {title}
+                </a>
+            </div>
+            <div className="navbar__links">
+                {pages.map((page, index) => 
+                    <NavButton
+                        key={index} 
+                        href={page.href}
+                        name={page.name}
+                    />
+                )}
+            </div>
+        </div>
     )
 }
 
