@@ -11,7 +11,7 @@ branches:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $DIARY_TOKEN
+  github-token: ${{ secrets.DIARY_TOKEN }}
   local_dir: public
   keep-history: true
   on:
