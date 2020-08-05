@@ -1,12 +1,22 @@
 language: node_js
+node_js:
+  - "stable"
 cache:
   directories:
-    - ./node_modules
-  node_js:
-    - "13"
-  before_install:
-  - npm install -g yarn
-  - yarn
-  script:
-  - yarn run build
-  - yarn test
+  - node_modules
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: public
+  keep-history: true
+  on:
+    branch: master
+before_script:
+  - "npm i -g yarn"
+  - "yarn global add gatsby gatsby-cli"
+  - "yarn"
+script:
+  - "yarn run test"
+after_success:
+  - "yarn run deploy"
