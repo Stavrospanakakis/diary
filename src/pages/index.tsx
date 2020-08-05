@@ -1,46 +1,10 @@
 import React from 'react'
-import { graphql} from "gatsby"
-import { Layout, PostPreview } from '../components'
 
-export const postsPreview = graphql`
-query AllPostsPreview {
-    allMarkdownRemark {
-        edges {
-            node {
-                frontmatter {
-                    date
-                    title
-                    description
-                    path
-                }
-            }
-        }
-    }
-}
-`
-
-interface ILandpageProps {
-    data: any
-}
-
-const App: React.FC<ILandpageProps> = props => {
-    const { data } = props
+const Landpage: React.FC = () => {
     return (
-        <Layout>
-            { 
-                data.allMarkdownRemark.edges.map(post => 
-                    <PostPreview
-                        title={post.node.frontmatter.title}
-                        date={post.node.frontmatter.date}
-                        description={post.node.frontmatter.description}
-                        key={`${post.node.frontmatter.date}__${post.node.frontmatter.title}`}
-                        path={post.node.frontmatter.path}
-                    />   
-                )
-            }   
-        </Layout>
+        <h1>SOON</h1>
     )
 }
 
 
-export default App
+export default Landpage
