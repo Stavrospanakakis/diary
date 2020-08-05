@@ -4,23 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
-branches:
-  only:
-    - dev
-    - gh-pages
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: ${{ secrets.DIARY_TOKEN }}
-  local_dir: public
-  keep-history: true
-  on:
-    branch: gh-pages
 before_script:
   - "npm i -g yarn"
   - "yarn global add gatsby gatsby-cli"
   - "yarn"
 script:
   - "yarn run test"
-after_success:
-  - "yarn run deploy"
