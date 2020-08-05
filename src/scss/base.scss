@@ -5,10 +5,13 @@
 
 @import './pages/landpage.scss';
 
+* {
+    box-sizing: border-box;
+}
 
 body {
-    margin:0 auto;
-    padding:0;
     width: 60%;
+    margin: 0 auto;
+    padding:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
