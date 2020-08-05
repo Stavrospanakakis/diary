@@ -4,6 +4,10 @@ node_js:
 cache:
   directories:
   - node_modules
+branches:
+  only:
+    - dev
+    - gh-pages
 deploy:
   provider: pages
   skip-cleanup: true
