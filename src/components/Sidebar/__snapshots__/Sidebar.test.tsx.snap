@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render 1`] = `
+<div>
+  <div
+    class="sidebar"
+  >
+    <div
+      class="sidebar__header"
+    >
+      About me
+    </div>
+    <img
+      alt="John Doe"
+      class="sidebar__profileImage"
+      src="profile.jpg"
+    />
+    <div
+      class="sidebar__fullName"
+    >
+      John Doe
+    </div>
+    <div
+      class="sidebar__property"
+    >
+      Web Developer
+    </div>
+    <div
+      class="sidebar__info"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div
+      class="sidebar__header"
+    >
+      Contact me
+    </div>
+    <div
+      class="sidebar__social-media"
+    >
+      <a
+        class="sidebar__social-media__social"
+        href="https://www.linkedin.com"
+      >
+        <i
+          class="fa fa-linkedin"
+        />
+      </a>
+    </div>
+    <div
+      class="sidebar__social-media"
+    >
+      <a
+        class="sidebar__social-media__social"
+        href="www.instagram.com/"
+      >
+        <i
+          class="fa fa-instagram"
+        />
+      </a>
+    </div>
+    <div
+      class="sidebar__social-media"
+    >
+      <a
+        class="sidebar__social-media__social"
+        href="https://twitter.com"
+      >
+        <i
+          class="fa fa-twitter"
+        />
+      </a>
+    </div>
+    <div
+      class="sidebar__social-media"
+    >
+      <a
+        class="sidebar__social-media__social"
+        href="https://github.com"
+      >
+        <i
+          class="fa fa-github"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;
