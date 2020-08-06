@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Navbar should render 1`] = `
+<div>
+  <div
+    class="navbar"
+  >
+    <div
+      class="navbar__header"
+    >
+      <a
+        class="navbar__header__title"
+        href="/"
+      >
+        Diary of a Web Developer
+      </a>
+    </div>
+    <div
+      class="navbar__links"
+    >
+      <a
+        href="https://github.com"
+      >
+        Projects
+      </a>
+      <a
+        href="https://resume.com"
+      >
+        Resume
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Sidebar should render 1`] = `
 <div>
   <div

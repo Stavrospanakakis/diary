@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 
 import Navbar from './Navbar'
 
-describe('Sidebar', () => {
+describe('Navbar', () => {
 	it('should render', () => {
 		const { container } = render(<Navbar />)
 		expect(container).toMatchSnapshot()
