@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 import '../../scss/base.scss'
 
@@ -8,12 +8,12 @@ interface ILayoutProps {
 }
 
 const Layout: React.FC<ILayoutProps> = (props) => {
-    const { children } = props
-    return (
-        <>
-        <main>{children}</main>
-        </>
-    )
+	const { children } = props
+	return (
+		<>
+			<main>{children}</main>
+		</>
+	)
 }
 
 export default Layout
