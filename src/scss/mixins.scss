@@ -1,0 +1,9 @@
+@mixin header-block {
+  background-color: $black;
+  color: $white;
+  text-transform: uppercase;
+  padding: 7px;
+  margin-bottom: $spacing-unit;
+  border-radius: 2px;
+  font-size: 14px;
+}
