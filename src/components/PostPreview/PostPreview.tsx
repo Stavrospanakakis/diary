@@ -2,20 +2,43 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 interface IPostPreviewProps {
+		image: string
     title: string
     description: string
-    date: string
-    path: string
+		path: string
+		tags: string[]
 }
 
 const PostPreview: React.FC<IPostPreviewProps> = props => {
-	const { title, description, date, path } = props
+	const { image, title, description, path, tags } = props
 	return (
-		<div className="post">
-			<h3 className="post__title">{ title }</h3>
-			<p className="post__description">{ description }</p>
-			<p className="post__date">{ date }</p>
-			<Link to={ path }>Read more</Link>
+		<div className='post-preview'>
+			<img
+				className='post-preview__image'
+				src={image}
+				alt={title}
+			/>
+			
+			<h3 className='post-preview__title'>{title}</h3>
+			<p className='post-preview__description'>{description}</p>
+
+			<div className='post-preview__tags'>
+				{tags.map((tag, index) => 
+					<span
+						className='post-preview__tags__tag'
+						key={index}
+					>
+						{tag}
+					</span>
+				)}
+			</div>
+			
+			<Link
+				className='post-preview__read-more__link'
+				to={path}
+			>
+				<button className='post-preview__read-more'>Read More</button>
+			</Link>
 		</div>
 	)
 }
