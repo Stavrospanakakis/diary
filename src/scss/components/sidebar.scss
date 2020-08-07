@@ -1,17 +1,13 @@
 @import './variables.scss';
+@import './mixins.scss';
 
 .sidebar {
     width:300px;
     text-align: center;
-    border: 2px solid #f1f1f1;
+    border-left: 2px solid $light-gray;
+    border-right: 2px solid $light-gray;
     &__header {
-        background-color: $black;
-        color: $white;
-        text-transform: uppercase;
-        padding: 7px;
-        margin-bottom: $spacing-unit;
-        border-radius: 2px;
-        font-size: 14px;
+        @include header-block;
     }
     &__profileImage {
         width: 250px;
