@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render 1`] = `
+<div>
+  <div
+    class="post-preview"
+  >
+    <img
+      alt="test title"
+      class="post-preview__image"
+      src="test_image.jpg"
+    />
+    <h3
+      class="post-preview__title"
+    >
+      test title
+    </h3>
+    <p
+      class="post-preview__description"
+    >
+      test description
+    </p>
+    <div
+      class="post-preview__tags"
+    >
+      <span
+        class="post-preview__tags__tag"
+      >
+        these
+      </span>
+      <span
+        class="post-preview__tags__tag"
+      >
+        are
+      </span>
+      <span
+        class="post-preview__tags__tag"
+      >
+        test
+      </span>
+      <span
+        class="post-preview__tags__tag"
+      >
+        tags
+      </span>
+    </div>
+    <a
+      class="post-preview__read-more__link"
+      href="/test path"
+    >
+      <button
+        class="post-preview__read-more"
+      >
+        Read More
+      </button>
+    </a>
+  </div>
+</div>
+`;
