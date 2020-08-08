@@ -1,0 +1,18 @@
+@import './mixins';
+
+.post {
+  &__title {
+    font-size:22px;
+    text-transform: uppercase;
+  }
+  &__date {
+
+  }
+  &__tags {
+    color:$white;
+    @include tags;
+  }
+  &__html {
+    @include markdown-highlight;
+  }
+}

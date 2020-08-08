@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../Layout/Layout'
+import { Layout } from '../index'
 
 export const postQuery = graphql`
   query Post($path: String!) {
@@ -8,7 +8,8 @@ export const postQuery = graphql`
       frontmatter {
         date
         title
-        path
+				path
+				tags
       }
       html
     }
@@ -21,14 +22,24 @@ interface IPostProps {
 
 const Post: React.FC<IPostProps> = props => {
 	const { data } = props
+	const { html } = data.markdownRemark 
 	const post = data.markdownRemark.frontmatter
-	const { title, date } = post
+	const { title, date, tags } = post
 	return (
 		<Layout>
 			<div className='post'>
 				<h1 className='post__title'>{title}</h1>
-				<p className='post__date'>{date}</p>
-				<div dangerouslySetInnerHTML={{__html: post.html}}></div>
+				<div className='post__html' dangerouslySetInnerHTML={{ __html: html }}></div>
+				<div className='post__tags'>
+					{tags.map((tag:string, index:number) => 
+						<span
+							className='post__tags__tag'
+							key={index}
+						>
+							{tag}
+						</span>
+					)}
+				</div>
 			</div>
            
 		</Layout>
