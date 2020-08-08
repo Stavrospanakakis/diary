@@ -1,19 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import '../../scss/base.scss'
+import Sidebar from '../Sidebar/Sidebar'
 
-interface ILayoutProps {
-    children: PropTypes.node.isRequired
-}
 
-const Layout: React.FC<ILayoutProps> = (props) => {
-	const { children } = props
+const Layout: React.FC = props => {
+	const {children} = props
 	return (
 		<>
+			<Sidebar />
 			<main>{children}</main>
 		</>
 	)
+}
+
+Layout.propTypes = {
+	children: PropTypes.node.isRequired
 }
 
 export default Layout
