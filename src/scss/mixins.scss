@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 @mixin header-block {
   background-color: $black;
   color: $white;
@@ -6,4 +8,49 @@
   margin-bottom: $spacing-unit;
   border-radius: 2px;
   font-size: 14px;
+}
+
+@mixin tags {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: $spacing-unit auto $spacing-unit auto;
+}
+@mixin markdown-highlight {
+  h1,h2 {
+    border-bottom: 1px solid $medium-gray;
+    padding:1px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  li {
+    font-size: 14px;
+  }
+  pre {
+    background-color: $medium-gray;
+    border: 1px solid $medium-gray;
+    border-radius: 3px;
+    padding:5px;
+    code {
+      font-size: 14px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
 }

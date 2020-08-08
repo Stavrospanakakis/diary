@@ -23,11 +23,7 @@
     font-size: 14px;
   }
   &__tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: $spacing-unit auto $spacing-unit auto;
-
+    @include tags;
     &__tag {
       list-style: none;
       background-color: $light-gray;
