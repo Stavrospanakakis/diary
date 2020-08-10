@@ -27,7 +27,7 @@ const Post: React.FC<IPostProps> = props => {
 	const post = data.markdownRemark.frontmatter
 	const { title, date, tags } = post
 	return (
-		<Layout>
+		<Layout isSidebarVisible={true}>
 			<div style={{ marginLeft:'380px'}} className='post'>
 				<h1 className='px-6 py-4 font-bold text-purple-500 text-xl uppercase'>{title}</h1>
 				<div className='px-6 mx-auto' dangerouslySetInnerHTML={{ __html: html }}></div>

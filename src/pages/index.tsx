@@ -27,8 +27,8 @@ interface ILandpageProps {
 const Landpage: React.FC<ILandpageProps> = props => {
 	const { data } = props
 	return (
-		<Layout>
-			<div style={{ marginLeft:'380px'}} className='grid grid-cols-2 gap-20 float-right'>
+		<Layout isSidebarVisible={false}>
+			<div className='flex flex-wrap items-center justify-around'>
 				{ 
 					data.allMarkdownRemark.edges.map(post => 
 						<PostPreview

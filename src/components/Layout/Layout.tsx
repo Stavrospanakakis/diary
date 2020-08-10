@@ -6,19 +6,20 @@ import Navbar from '../Navbar/Navbar'
 
 
 const Layout: React.FC = props => {
-	const  { children } = props
+	const  { children, isSidebarVisible } = props
 	return (
-		<div className='container mx-auto'>
+		<div className='xl:container xl:mx-auto'>
 			<Navbar />
-			<div className=''>
-				<Sidebar />
-				<main>{children}</main>
-			</div>
+			{
+				isSidebarVisible ?( <Sidebar />) : (<></>)
+			}
+			<main>{children}</main>
 		</div>
 	)
 }
 
 Layout.propTypes = {
+	isSidebarVisible: Boolean ,
 	children: PropTypes.node.isRequired
 }
 
