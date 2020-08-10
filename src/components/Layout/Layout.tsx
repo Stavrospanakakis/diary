@@ -14,10 +14,10 @@ const Layout: React.FC<ILayoutProps> = props => {
 	return (
 		<div className='xl:container xl:mx-auto'>
 			<Navbar />
-			<div className='block md:grid md:grid-cols-3 md:gap-4'>
+			<div className={isSidebarVisible? ('block md:grid md:grid-cols-3 md:gap-4') : ('')}>
 				{children}
 				{
-					isSidebarVisible ?( <Sidebar />) : (<></>)
+					isSidebarVisible? ( <Sidebar />) : (<></>)
 				}
 			</div>
 

@@ -36,7 +36,7 @@ exports[`Layout should render 1`] = `
       </div>
     </div>
     <div
-      class="block md:grid md:grid-cols-3 md:gap-4"
+      class=""
     >
       <div
         class="max-w-sm rounded overflow-hidden shadow-lg mt-10"
