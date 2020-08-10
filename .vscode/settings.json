@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "eslint.workingDirectories": ["./src"],
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "jest.rootPath": "/src",
+  "jest.pathToJest": "yarn test --",
+  "autoimport.useSemiColon": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
+}
