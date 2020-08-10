@@ -5,7 +5,7 @@ const Sidebar: React.FC = () => {
 	const {fullName, profileImage, property, about, socialMedia} = SidebarData
     
 	return (
-		<div style={{ width:'350px'}} className='max-w-sm rounded overflow-hidden border-solid fixed bg-white'>
+		<div className='sidebar rounded overflow-hidden border-solid md:col-span-1'>
 
 			<img 
 				className='w-5/6 h-5/6 rounded-full mx-auto mt-5 ' 

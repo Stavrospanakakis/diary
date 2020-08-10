@@ -10,10 +10,13 @@ const Layout: React.FC = props => {
 	return (
 		<div className='xl:container xl:mx-auto'>
 			<Navbar />
-			{
-				isSidebarVisible ?( <Sidebar />) : (<></>)
-			}
-			<main>{children}</main>
+			<div className='block md:grid md:grid-cols-3 md:gap-4'>
+				{children}
+				{
+					isSidebarVisible ?( <Sidebar />) : (<></>)
+				}
+			</div>
+
 		</div>
 	)
 }
