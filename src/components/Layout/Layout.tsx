@@ -1,12 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { ReactElement } from 'react'
 import '../../assets/main.css'
 import Sidebar from '../Sidebar/Sidebar'
 import Navbar from '../Navbar/Navbar'
 
 
-const Layout: React.FC = props => {
-	const  { children, isSidebarVisible } = props
+interface ILayoutProps {
+	children: ReactElement | Array<ReactElement>
+	isSidebarVisible: boolean
+}
+
+const Layout: React.FC<ILayoutProps> = props => {
+	const { children, isSidebarVisible} = props
 	return (
 		<div className='xl:container xl:mx-auto'>
 			<Navbar />
@@ -21,9 +25,8 @@ const Layout: React.FC = props => {
 	)
 }
 
-Layout.propTypes = {
-	isSidebarVisible: Boolean ,
-	children: PropTypes.node.isRequired
-}
+// Layout.propTypes = {
+// 	children: PropTypes.node.isRequired
+// }
 
 export default Layout
