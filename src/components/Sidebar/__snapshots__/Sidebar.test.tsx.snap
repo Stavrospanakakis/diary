@@ -3,8 +3,7 @@
 exports[`Sidebar should render 1`] = `
 <div>
   <div
-    class="max-w-sm rounded overflow-hidden border-solid fixed bg-white shadow-lg mt-10"
-    style="width: 350px;"
+    class="sidebar rounded overflow-hidden border-solid md:col-span-1"
   >
     <img
       alt="John Doe"

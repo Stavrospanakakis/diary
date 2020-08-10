@@ -27,11 +27,11 @@ const Post: React.FC<IPostProps> = props => {
 	const post = data.markdownRemark.frontmatter
 	const { title, date, tags } = post
 	return (
-		<Layout>
-			<div style={{ marginLeft:'380px'}} className='post'>
-				<h1 className='px-6 py-4 font-bold text-purple-500 text-xl uppercase'>{title}</h1>
-				<div className='px-6 mx-auto' dangerouslySetInnerHTML={{ __html: html }}></div>
-				<div className='px-6 mx-auto mt-5'>
+		<Layout isSidebarVisible={true}>
+			<div className='md:col-span-2'>
+				<h1 className='px-2 xl:px-0 py-4 font-bold text-purple-500 text-xl uppercase'>{title}</h1>
+				<div className='px-2 xl:px-0 mx-auto' dangerouslySetInnerHTML={{ __html: html }}></div>
+				<div className='px-2 xl:px-0 mx-auto mt-5'>
 					{tags.map((tag:string, index:number) => 
 						<span
 							className='inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2'
