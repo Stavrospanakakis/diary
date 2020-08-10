@@ -57,7 +57,7 @@
   },
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run build:css && gatsby build",
     "develop": "gatsby develop",
     "start": "npm run watch:css && npm run develop",
     "lint": "eslint --ext ts,tsx src/components src/data src/html.js src/pages src/*.js",
