@@ -1,16 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import '../../scss/base.scss'
+import '../../assets/main.css'
 import Sidebar from '../Sidebar/Sidebar'
+import Navbar from '../Navbar/Navbar'
 
 
 const Layout: React.FC = props => {
-	const {children} = props
+	const  { children } = props
 	return (
-		<>
-			<Sidebar />
-			<main>{children}</main>
-		</>
+		<div className='container mx-auto'>
+			<Navbar />
+			<div className=''>
+				<Sidebar />
+				<main>{children}</main>
+			</div>
+		</div>
 	)
 }
 

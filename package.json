@@ -36,11 +36,14 @@
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/eslint-plugin-tslint": "^3.8.0",
     "@typescript-eslint/parser": "^3.8.0",
+    "autoprefixer": "^9.8.6",
     "babel-jest": "^26.2.2",
     "eslint": "^7.6.0",
     "eslint-plugin-react": "^7.20.5",
     "gatsby-plugin-eslint": "^2.0.8",
+    "postcss-cli": "^7.1.1",
     "react-test-renderer": "^16.13.1",
+    "tailwindcss": "^1.6.2",
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
   },
@@ -56,11 +59,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "npm run watch:css && npm run develop",
     "lint": "eslint --ext ts,tsx src/components src/data src/html.js src/pages src/*.js",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest"
+    "test": "jest",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "repository": {
     "type": "git",
