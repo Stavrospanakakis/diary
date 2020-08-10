@@ -3,7 +3,7 @@
 exports[`Navbar should render 1`] = `
 <div>
   <div
-    class="post-preview"
+    class="max-w-sm rounded overflow-hidden shadow-lg mt-10"
   >
     <img
       alt="test title"
@@ -11,45 +11,48 @@ exports[`Navbar should render 1`] = `
       src="test_image.jpg"
     />
     <h3
-      class="post-preview__title"
+      class="px-6 py-4 font-bold text-purple-500 text-xl uppercase"
     >
       test title
     </h3>
-    <p
-      class="post-preview__description"
-    >
-      test description
-    </p>
+    <hr
+      class="py-2"
+    />
     <div
-      class="post-preview__tags"
+      class="px-6 mx-auto"
     >
       <span
-        class="post-preview__tags__tag"
+        class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
       >
         these
       </span>
       <span
-        class="post-preview__tags__tag"
+        class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
       >
         are
       </span>
       <span
-        class="post-preview__tags__tag"
+        class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
       >
         test
       </span>
       <span
-        class="post-preview__tags__tag"
+        class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
       >
         tags
       </span>
     </div>
+    <p
+      class="px-6 py-4 text-gray-700 text-base text-justify"
+    >
+      test description
+    </p>
     <a
-      class="post-preview__read-more__link"
+      class="max-w-sm px-4 py-4 float-right"
       href="/test path"
     >
       <button
-        class="post-preview__read-more"
+        class="bg-transparent hover:bg-purple-500 text-purple-900 font-semibold hover:text-white py-2 px-2 border border-purple-500 hover:border-transparent rounded"
       >
         Read More
       </button>

@@ -3,79 +3,61 @@
 exports[`Sidebar should render 1`] = `
 <div>
   <div
-    class="sidebar"
+    class="max-w-sm rounded overflow-hidden border-solid fixed bg-white shadow-lg mt-10"
+    style="width: 350px;"
   >
-    <div
-      class="sidebar__header"
-    >
-      About me
-    </div>
     <img
       alt="John Doe"
-      class="sidebar__profileImage"
+      class="w-5/6 h-5/6 rounded-full mx-auto mt-5 "
       src="profile.jpg"
     />
     <div
-      class="sidebar__fullName"
+      class="px-6 py-4 font-bold text-purple-500 text-xl "
     >
       John Doe
     </div>
     <div
-      class="sidebar__property"
+      class="px-6 text-md"
     >
       Web Developer
     </div>
     <div
-      class="sidebar__info"
+      class="px-6 py-4 text-gray-700 text-base text-justify"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
+    <hr
+      class="px-6 py-2"
+    />
     <div
-      class="sidebar__header"
-    >
-      Contact me
-    </div>
-    <div
-      class="sidebar__social-media"
+      class="flex items-stretch text-center "
     >
       <a
-        class="sidebar__social-media__social"
+        class="flex-1 text-gray-700 w-8 h-8"
         href="https://www.linkedin.com"
       >
         <i
           class="fa fa-linkedin"
         />
       </a>
-    </div>
-    <div
-      class="sidebar__social-media"
-    >
       <a
-        class="sidebar__social-media__social"
+        class="flex-1 text-gray-700 w-8 h-8"
         href="www.instagram.com/"
       >
         <i
           class="fa fa-instagram"
         />
       </a>
-    </div>
-    <div
-      class="sidebar__social-media"
-    >
       <a
-        class="sidebar__social-media__social"
+        class="flex-1 text-gray-700 w-8 h-8"
         href="https://twitter.com"
       >
         <i
           class="fa fa-twitter"
         />
       </a>
-    </div>
-    <div
-      class="sidebar__social-media"
-    >
       <a
-        class="sidebar__social-media__social"
+        class="flex-1 text-gray-700 w-8 h-8"
         href="https://github.com"
       >
         <i
