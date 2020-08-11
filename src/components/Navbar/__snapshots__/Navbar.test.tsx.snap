@@ -3,33 +3,37 @@
 exports[`Navbar should render 1`] = `
 <div>
   <div
-    class="bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
+    class="bg-white w-screen shadow-lg"
   >
     <div
-      class=""
+      class="xl:container xl:mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
     >
-      <a
-        class="text-white font-bold uppercase"
-        href="/"
+      <div
+        class=""
       >
-        Diary of a Web Developer
-      </a>
-    </div>
-    <div
-      class="px-2 pt-2 pb-4 sm:flex sm:p-0"
-    >
-      <a
-        class="mt-1 block px-2 py-1 text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 hidden md:flex"
-        href="https://github.com"
+        <a
+          class="text-purple-700 font-bold uppercase"
+          href="/"
+        >
+          Diary of a Web Developer
+        </a>
+      </div>
+      <div
+        class="px-2 pt-2 pb-4 sm:flex sm:p-0"
       >
-        Projects
-      </a>
-      <a
-        class="mt-1 block px-2 py-1 text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 hidden md:flex"
-        href="https://resume.com"
-      >
-        Resume
-      </a>
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://github.com"
+        >
+          Projects
+        </a>
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://resume.com"
+        >
+          Resume
+        </a>
+      </div>
     </div>
   </div>
 </div>
