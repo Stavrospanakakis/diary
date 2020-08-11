@@ -27,7 +27,12 @@ interface ILandpageProps {
 const Landpage: React.FC<ILandpageProps> = props => {
 	const { data } = props
 	return (
-		<Layout isSidebarVisible={false}>
+		<Layout
+			isSidebarVisible={false}
+			description='Writing my personal thoughts and experiances about Web Development'
+			image='image.jpg'
+			path=''
+		>
 			<div className='flex flex-wrap items-center justify-around'>
 				{ 
 					data.allMarkdownRemark.edges.map(post => 

@@ -7,9 +7,10 @@ export const postQuery = graphql`
   query Post($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path }}) {
       frontmatter {
-        date
+        description
         title
 				path
+				image
 				tags
       }
       html
@@ -25,9 +26,16 @@ const Post: React.FC<IPostProps> = props => {
 	const { data } = props
 	const { html } = data.markdownRemark 
 	const post = data.markdownRemark.frontmatter
-	const { title, date, tags } = post
+	const { title, tags, image, description, path} = post
+
 	return (
-		<Layout isSidebarVisible={true}>
+		<Layout
+			isSidebarVisible={true}
+			title={title}
+			description={description}
+			image={image}
+			path={path}
+		>
 			<div className='md:col-span-2'>
 				<h1 className='px-2 xl:px-0 py-4 font-bold text-purple-500 text-xl uppercase'>{title}</h1>
 				<div className='px-2 xl:px-0 mx-auto' dangerouslySetInnerHTML={{ __html: html }}></div>
@@ -42,7 +50,6 @@ const Post: React.FC<IPostProps> = props => {
 					)}
 				</div>
 			</div>
-           
 		</Layout>
 	)
 }
