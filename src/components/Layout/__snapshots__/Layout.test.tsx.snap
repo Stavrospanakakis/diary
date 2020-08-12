@@ -2,110 +2,138 @@
 
 exports[`Layout should render 1`] = `
 <div>
-  <div>
+  <div
+    class="bg-white shadow-lg"
+  >
     <div
-      class="bg-white w-screen shadow-lg"
+      class="xl:container xl:mx-auto sm:flex sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
     >
+      <div>
+        <a
+          class="text-purple-700 font-bold uppercase text-center"
+          href="/"
+        >
+          Diary of a Web Developer
+        </a>
+      </div>
       <div
-        class="xl:container xl:mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
+        class="px-2 pt-2 pb-4 sm:flex sm:p-0"
       >
-        <div
-          class=""
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://github.com"
         >
-          <a
-            class="text-purple-700 font-bold uppercase"
-            href="/"
-          >
-            Diary of a Web Developer
-          </a>
-        </div>
-        <div
-          class="px-2 pt-2 pb-4 sm:flex sm:p-0"
+          Projects
+        </a>
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://resume.com"
         >
-          <a
-            class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
-            href="https://github.com"
-          >
-            Projects
-          </a>
-          <a
-            class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
-            href="https://resume.com"
-          >
-            Resume
-          </a>
-        </div>
+          Resume
+        </a>
       </div>
     </div>
+  </div>
+  <div
+    class="banner"
+  >
     <div
-      class="xl:container xl:mx-auto"
+      class="hero-area"
     >
       <div
-        class="max-w-sm rounded overflow-hidden shadow-lg mt-10"
+        class="hero-text "
       >
-        <img
-          alt="test title"
-          class="post-preview__image"
-          src="test_image.jpg"
-        />
-        <h3
-          class="px-6 py-4 font-bold text-purple-500 text-xl uppercase"
+        <h1
+          class="text-xl sm:text-2xl md:text-6xl text-white text-center flex justify-center align-center"
         >
-          test title
-        </h3>
-        <hr
-          class="py-2"
-        />
-        <div
-          class="px-6 mx-auto"
+          I am Stavros Panakakis
+        </h1>
+        <h1
+          class="text-md sm:text-lg md:text-2xl text-white text-center flex justify-center align-center"
         >
-          <span
-            class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
-          >
-            these
-          </span>
-          <span
-            class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
-          >
-            are
-          </span>
-          <span
-            class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
-          >
-            test
-          </span>
-          <span
-            class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
-          >
-            tags
-          </span>
-        </div>
-        <p
-          class="px-6 py-4 text-gray-700 text-base text-justify"
-        >
-          test description
-        </p>
+          Welcome to my personal diary
+        </h1>
         <a
-          class="max-w-sm px-4 py-4 float-right"
-          href="/test path"
+          class="flex justify-center align-center mt-5"
+          href="/#posts"
         >
           <button
-            class="bg-transparent hover:bg-purple-500 text-purple-900 font-semibold hover:text-white py-2 px-2 border border-purple-500 hover:border-transparent rounded"
+            class="text-xs sm:text-sm md:text-lg text-white font-semibold hover:bg-purple-500 py-2 px-2 border border-purple-500 hover:border-transparent rounded"
           >
-            Read More
+            Latest Posts
           </button>
         </a>
       </div>
     </div>
+  </div>
+  <div
+    class="xl:container xl:mx-auto"
+  >
     <div
-      class="block sm:flex sm:justify-center h-10 leading-10 sm:bottom-0 sm:left-0 sm:fixed w-full border-solid border-2 border-gray-200"
+      class="max-w-sm rounded overflow-hidden shadow-lg mt-10"
     >
-      <p
-        class="text-purple-600 px-4 text-center"
+      <img
+        alt="test title"
+        class="post-preview__image"
+        src="test_image.jpg"
+      />
+      <h3
+        class="px-6 py-4 font-bold text-purple-500 text-xl uppercase"
       >
-        © Copyright 2020
+        test title
+      </h3>
+      <hr
+        class="py-2"
+      />
+      <div
+        class="px-6 mx-auto"
+      >
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          these
+        </span>
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          are
+        </span>
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          test
+        </span>
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          tags
+        </span>
+      </div>
+      <p
+        class="px-6 py-4 text-gray-700 text-base text-justify"
+      >
+        test description
       </p>
+      <a
+        class="max-w-sm px-4 py-4 float-right"
+        href="/test path"
+      >
+        <button
+          class="bg-transparent hover:bg-purple-500 text-purple-900 font-semibold hover:text-white py-2 px-2 border border-purple-500 hover:border-transparent rounded"
+        >
+          Read More
+        </button>
+      </a>
     </div>
+  </div>
+  <div
+    class="block sm:flex sm:justify-center h-10 leading-10 mt-10 w-full border-solid border-2 border-gray-200"
+  >
+    <p
+      class="text-purple-600 px-4 text-center"
+    >
+      © Copyright 2020
+    </p>
   </div>
 </div>
 `;

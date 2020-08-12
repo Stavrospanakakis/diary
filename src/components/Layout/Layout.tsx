@@ -6,27 +6,29 @@ import Sidebar from '../Sidebar/Sidebar'
 import Navbar from '../Navbar/Navbar'
 import SEO from '../SEO/Seo'
 import Footer from '../Footer/Footer'
+import Banner from '../Banner/Banner'
 
 interface ILayoutProps {
 	children: ReactElement | Array<ReactElement>
-	isSidebarVisible: boolean
+	isVisible: boolean
 
 }
 
 const Layout: React.FC<ILayoutProps> = props => {
-	const { children, isSidebarVisible } = props
+	const { children, isVisible } = props
 	return (
-		<div>
+		<>
 			<SEO {...props}/>
 			<Navbar />
-			<div className={isSidebarVisible? ('block md:grid md:grid-cols-3 md:gap-4 xl:container xl:mx-auto') : ('xl:container xl:mx-auto')}>
+			{ !isVisible? (<Banner />) : (<></>)}
+			<div className={isVisible? ('block md:grid md:grid-cols-3 md:gap-4 xl:container xl:mx-auto') : ('xl:container xl:mx-auto')}>
 				{children}
 				{
-					isSidebarVisible? ( <Sidebar />) : (<></>)
+					isVisible? ( <Sidebar />) : (<></>)
 				}
 			</div>
 			<Footer />
-		</div>
+		</>
 	)
 }
 
