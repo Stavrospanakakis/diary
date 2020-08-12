@@ -4,7 +4,8 @@ import '../../assets/main.css'
 
 import Sidebar from '../Sidebar/Sidebar'
 import Navbar from '../Navbar/Navbar'
-import SEO from './Seo'
+import SEO from '../SEO/Seo'
+import Footer from '../Footer/Footer'
 
 interface ILayoutProps {
 	children: ReactElement | Array<ReactElement>
@@ -24,7 +25,7 @@ const Layout: React.FC<ILayoutProps> = props => {
 					isSidebarVisible? ( <Sidebar />) : (<></>)
 				}
 			</div>
-
+			<Footer />
 		</div>
 	)
 }
