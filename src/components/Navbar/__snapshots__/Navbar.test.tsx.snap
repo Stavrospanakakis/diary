@@ -3,16 +3,14 @@
 exports[`Navbar should render 1`] = `
 <div>
   <div
-    class="bg-white w-screen shadow-lg"
+    class="bg-white shadow-lg"
   >
     <div
-      class="xl:container xl:mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
+      class="xl:container xl:mx-auto sm:flex sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
     >
-      <div
-        class=""
-      >
+      <div>
         <a
-          class="text-purple-700 font-bold uppercase"
+          class="text-purple-700 font-bold uppercase text-center"
           href="/"
         >
           Diary of a Web Developer
