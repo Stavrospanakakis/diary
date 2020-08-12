@@ -8,7 +8,7 @@ import PostPreview from '../PostPreview/PostPreview'
 describe('Layout', () => {
 	it('should render', () => {
 		const { container } = render(
-			<Layout isSidebarVisible={false}>
+			<Layout isVisible={false}>
 				<PostPreview
 					image='test_image.jpg'
 					title='test title'

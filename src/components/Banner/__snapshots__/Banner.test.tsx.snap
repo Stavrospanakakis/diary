@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BAnner should render 1`] = `
+<div>
+  <div
+    class="banner"
+  >
+    <div
+      class="hero-area"
+    >
+      <div
+        class="hero-text "
+      >
+        <h1
+          class="text-xl sm:text-2xl md:text-6xl text-white text-center flex justify-center align-center"
+        >
+          I am Stavros Panakakis
+        </h1>
+        <h1
+          class="text-md sm:text-lg md:text-2xl text-white text-center flex justify-center align-center"
+        >
+          Welcome to my personal diary
+        </h1>
+        <a
+          class="flex justify-center align-center mt-5"
+          href="/#posts"
+        >
+          <button
+            class="text-xs sm:text-sm md:text-lg text-white font-semibold hover:bg-purple-500 py-2 px-2 border border-purple-500 hover:border-transparent rounded"
+          >
+            Latest Posts
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

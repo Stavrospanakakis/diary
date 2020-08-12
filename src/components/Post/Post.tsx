@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Layout } from '../index'
-import '../../assets/post.css'
+import '../../assets/Post/post.css'
 
 export const postQuery = graphql`
   query Post($path: String!) {
@@ -30,7 +30,7 @@ const Post: React.FC<IPostProps> = props => {
 
 	return (
 		<Layout
-			isSidebarVisible={true}
+			isVisible={true}
 			title={title}
 			description={description}
 			image={image}

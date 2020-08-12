@@ -28,12 +28,13 @@ const Landpage: React.FC<ILandpageProps> = props => {
 	const { data } = props
 	return (
 		<Layout
-			isSidebarVisible={false}
+			isVisible={false}
 			description='Writing my personal thoughts and experiances about Web Development'
-			image='image.jpg'
+			image='profile.jpg'
 			path=''
 		>
-			<div className='flex flex-wrap items-center justify-around'>
+			<h1 className='text-3xl md:text-5xl text-center mt-5'>Latest Posts</h1>
+			<div className='flex flex-wrap items-center justify-around' id='posts'>
 				{ 
 					data.allMarkdownRemark.edges.map(post => 
 						<PostPreview
