@@ -59,9 +59,9 @@
   },
   "license": "0BSD",
   "scripts": {
-    "build": "npx tailwind init tailwind.js --full && npm run build:css && gatsby build",
+    "build": "sh scripts/tailwind.sh && npm run build:css && gatsby build",
     "develop": "gatsby develop",
-    "start": "npx tailwind init tailwind.js --full && npm run watch:css && npm run develop",
+    "start": "sh scripts/tailwind.sh && npm run watch:css && npm run develop",
     "lint": "eslint --ext ts,tsx src/components src/data src/html.js src/pages src/*.js",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
