@@ -11,7 +11,6 @@ import Banner from '../Banner/Banner'
 interface ILayoutProps {
 	children: ReactElement | Array<ReactElement>
 	isVisible: boolean
-
 }
 
 const Layout: React.FC<ILayoutProps> = props => {

@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql} from 'gatsby'
 import { Layout, PostPreview } from '../components/index'
 
 export const postsPreview = graphql`
 query AllPostsPreview {
-  allMarkdownRemark {
+	allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
     edges {
       node {
         frontmatter {
-          description
+					description
+					date
           image
           path
           tags
@@ -26,6 +27,8 @@ interface ILandpageProps {
 
 const Landpage: React.FC<ILandpageProps> = props => {
 	const { data } = props
+	const posts = data.allMarkdownRemark.edges
+
 	return (
 		<Layout
 			isVisible={false}
@@ -36,7 +39,7 @@ const Landpage: React.FC<ILandpageProps> = props => {
 			<h1 className='text-3xl md:text-5xl text-center mt-5'>Latest Posts</h1>
 			<div className='flex flex-wrap items-center justify-around' id='posts'>
 				{ 
-					data.allMarkdownRemark.edges.map(post => 
+					posts.slice(0,6).map(post => 
 						<PostPreview
 							image={post.node.frontmatter.image}
 							title={post.node.frontmatter.title}
