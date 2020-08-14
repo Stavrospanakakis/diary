@@ -1,4 +1,9 @@
 module.exports = {
+	siteMetadata: {
+		title: 'Diary of a Web Developer',
+		description: 'Writing my personal thoughts and experiances about Web Development',
+		author: '@stavepan',
+	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-transformer-sharp',
