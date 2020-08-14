@@ -3,6 +3,7 @@ module.exports = {
 		title: 'Diary of a Web Developer',
 		description: 'Writing my personal thoughts and experiances about Web Development',
 		author: '@stavepan',
+		siteUrl: 'https://diary-gatsby-theme.netlify.app'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
