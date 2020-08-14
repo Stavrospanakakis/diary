@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { graphql} from 'gatsby'
-import { Layout, PostPreview } from '../components/index'
+import { Layout, PostPreview, SEO } from '../components/index'
 
 export const postsPreview = graphql`
 query AllPostsPreview {
@@ -28,7 +28,7 @@ interface ILandpageProps {
 const Landpage: React.FC<ILandpageProps> = props => {
 	const { data } = props
 	const posts = data.allMarkdownRemark.edges
-
+	
 	return (
 		<Layout
 			isVisible={false}
@@ -36,6 +36,7 @@ const Landpage: React.FC<ILandpageProps> = props => {
 			image='profile.jpg'
 			path=''
 		>
+			<SEO />
 			<h1 className='text-3xl md:text-5xl text-center mt-5'>Latest Posts</h1>
 			<div className='flex flex-wrap items-center justify-around' id='posts'>
 				{ 
