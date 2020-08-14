@@ -9,7 +9,7 @@ const Sidebar: React.FC = () => {
 
 			<img 
 				className='w-5/6 h-5/6 rounded-full mx-auto mt-5 ' 
-				src={profileImage} 
+				src={'https://diary.stavrospanakakis.com/' + profileImage} 
 				alt={fullName}
 			/>
 
