@@ -3,11 +3,11 @@ const NavbarData = {
 	pages: [
 		{
 			name: 'Projects',
-			href: 'https://github.com'
+			href: 'https://github.com/Stavrospanakakis'
 		},
 		{
 			name: 'Resume',
-			href: 'https://resume.com'
+			href: 'https://stavrospanakakis.com/cv/'
 		},
 	]
 }

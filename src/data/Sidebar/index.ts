@@ -1,29 +1,29 @@
 const SidebarData = {
 	id: '1',
-	fullName: 'John Doe',
+	fullName: 'Stavros Panakakis',
 	profileImage: 'profile.jpg',
 	property: 'Web Developer',
-	about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+	about: 'I am a passionate Undergraduate Student interested in web apps and modern technologies. I mainly focus on Web Development working with containers and microservices. \nIn this blog, I write my thoughts and experiances as a CS Student.',
 	socialMedia: [
 		{
 			name: 'Linkedin',
 			icon: 'fa fa-linkedin',
-			link: 'https://www.linkedin.com'
+			link: 'https://linkedin.com/in/stavrospanakakis/'
 		},
 		{
 			name: 'Instagram',
 			icon: 'fa fa-instagram',
-			link: 'www.instagram.com/'
+			link: 'https://instagram.com/stavrospanakakis'
 		},
 		{
 			name: 'Twitter',
 			icon: 'fa fa-twitter',
-			link: 'https://twitter.com'
+			link: 'https://twitter.com/stavepan'
 		},
 		{
 			name: 'Github',
 			icon: 'fa fa-github',
-			link: 'https://github.com'
+			link: 'https://github.com/Stavrospanakakis'
 		}
 	]
       
