@@ -21,13 +21,13 @@ exports[`Layout should render 1`] = `
       >
         <a
           class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
-          href="https://github.com"
+          href="https://github.com/Stavrospanakakis"
         >
           Projects
         </a>
         <a
           class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
-          href="https://resume.com"
+          href="https://stavrospanakakis.com/cv/"
         >
           Resume
         </a>
