@@ -31,11 +31,7 @@ const Landpage: React.FC<ILandpageProps> = props => {
 	
 	return (
 		<Layout
-			isVisible={false}
-			description='Writing my personal thoughts and experiances about Web Development'
-			image='profile.jpg'
-			path=''
-		>
+			isVisible={false}>
 			<SEO />
 			<h1 className='text-3xl md:text-5xl text-center mt-5'>Latest Posts</h1>
 			<div className='flex flex-wrap items-center justify-around' id='posts'>
