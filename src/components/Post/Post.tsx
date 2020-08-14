@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Layout } from '../index'
 import '../../assets/Post/post.css'
+import SEO from '../SEO/Seo'
 
 export const postQuery = graphql`
   query Post($path: String!) {
@@ -26,16 +27,18 @@ const Post: React.FC<IPostProps> = props => {
 	const { data } = props
 	const { html } = data.markdownRemark 
 	const post = data.markdownRemark.frontmatter
-	const { title, tags, image, description, path} = post
+	const { title, tags, description, image } = post
 
 	return (
 		<Layout
 			isVisible={true}
-			title={title}
-			description={description}
-			image={image}
-			path={path}
 		>
+			<SEO
+				article={true}
+				title={title}
+				description={description}
+				image={image}
+			/>
 			<div className='md:col-span-2'>
 				<h1 className='px-2 xl:px-0 py-4 font-bold text-purple-500 text-xl uppercase'>{title}</h1>
 				<div className='px-2 xl:px-0 mx-auto' dangerouslySetInnerHTML={{ __html: html }}></div>

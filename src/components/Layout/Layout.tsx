@@ -17,7 +17,6 @@ const Layout: React.FC<ILayoutProps> = props => {
 	const { children, isVisible } = props
 	return (
 		<>
-			<SEO {...props}/>
 			<Navbar />
 			{ !isVisible? (<Banner />) : (<></>)}
 			<div className={isVisible? ('block md:grid md:grid-cols-3 md:gap-4 xl:container xl:mx-auto') : ('xl:container xl:mx-auto')}>
