@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render 1`] = `
+<div>
+  <div
+    class="bg-white shadow-lg"
+  >
+    <div
+      class="xl:container xl:mx-auto sm:flex sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
+    >
+      <div>
+        <a
+          class="text-purple-700 font-bold uppercase text-center"
+          href="/"
+        >
+          Diary of a Web Developer
+        </a>
+      </div>
+      <div
+        class="px-2 pt-2 pb-4 sm:flex sm:p-0"
+      >
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://github.com/Stavrospanakakis"
+        >
+          Projects
+        </a>
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://stavrospanakakis.com/cv/"
+        >
+          Resume
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="banner"
+  >
+    <div
+      class="hero-area"
+    >
+      <div
+        class="hero-text "
+      >
+        <h1
+          class="text-xl sm:text-2xl md:text-6xl text-white text-center flex justify-center align-center"
+        >
+          I am Stavros Panakakis
+        </h1>
+        <h1
+          class="text-md sm:text-lg md:text-2xl text-white text-center flex justify-center align-center"
+        >
+          Welcome to my personal diary
+        </h1>
+        <a
+          class="flex justify-center align-center mt-5"
+          href="/#posts"
+        >
+          <button
+            class="text-xs sm:text-sm md:text-lg text-white font-semibold hover:bg-purple-500 py-2 px-2 border border-purple-500 hover:border-transparent rounded"
+          >
+            Latest Posts
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="xl:container xl:mx-auto"
+  >
+    <div
+      class="max-w-sm rounded overflow-hidden shadow-lg mt-10"
+    >
+      <img
+        alt="test title"
+        class="post-preview__image"
+        src="test_image.jpg"
+      />
+      <h3
+        class="px-6 py-4 font-bold text-purple-500 text-xl uppercase"
+      >
+        test title
+      </h3>
+      <hr
+        class="py-2"
+      />
+      <div
+        class="px-6 mx-auto"
+      >
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          these
+        </span>
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          are
+        </span>
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          test
+        </span>
+        <span
+          class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2"
+        >
+          tags
+        </span>
+      </div>
+      <p
+        class="px-6 py-4 text-gray-700 text-base text-justify"
+      >
+        test description
+      </p>
+      <a
+        class="max-w-sm px-4 py-4 float-right"
+        href="/test path"
+      >
+        <button
+          class="bg-transparent hover:bg-purple-500 text-purple-900 font-semibold hover:text-white py-2 px-2 border border-purple-500 hover:border-transparent rounded"
+        >
+          Read More
+        </button>
+      </a>
+    </div>
+  </div>
+  <div
+    class="block sm:flex sm:justify-center h-10 leading-10 mt-10 w-full border-solid border-2 border-gray-200"
+  >
+    <p
+      class="text-purple-600 px-4 text-center"
+    >
+      © Copyright 2020
+    </p>
+  </div>
+</div>
+`;

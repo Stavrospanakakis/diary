@@ -1,34 +1,35 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import SidebarData from '../../data/Sidebar'
 
 const Sidebar: React.FC = () => {
-    const {fullName, profileImage, property, about, socialMedia} = SidebarData
+	const {fullName, profileImage, property, about, socialMedia} = SidebarData
     
-    return (
-        <div className='sidebar'>
-            <div className='sidebar__header'>About me</div>
+	return (
+		<div className='sidebar rounded overflow-hidden border-solid md:col-span-1'>
 
-            <img 
-                className='sidebar__profileImage' 
-                src={profileImage} 
-                alt={fullName}
-            />
+			<img 
+				className='w-5/6 h-5/6 rounded-full mx-auto mt-5 ' 
+				src={profileImage} 
+				alt={fullName}
+			/>
 
-            <div className='sidebar__fullName'>{fullName}</div>
-            <div className='sidebar__property'>{property}</div>
-            <div className='sidebar__info'>{about}</div>
+			<div className='px-6 py-4 font-bold text-purple-500 text-xl '>{fullName}</div>
+			<div className='px-6 text-md'>{property}</div>
+			<div className='px-6 py-4 text-gray-700 text-base text-justify'>{about}</div>
 
-            <div className='sidebar__header'>Contact me</div>
-            {socialMedia.map((social, index) => 
-                <div key={index} className='sidebar__social-media'>
+			<hr className='px-6 py-2'/>
+			<div className='flex items-stretch text-center '>
 
-                <a href={social.link} className='sidebar__social-media__social'>
-                    <i className={social.icon}></i>
-                </a>   
-                </div>
-            )}
-        </div>
-    )
+				{socialMedia.map((social, index) => 
+
+					<a key={index} href={social.link} className='flex-1 text-gray-700 w-8 h-8'>
+						<i className={social.icon}></i>
+					</a>   
+				)}
+			</div>
+
+		</div>
+	)
 }
 
 export default Sidebar

@@ -1,33 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sidebar should render 1`] = `
+exports[`Navbar should render 1`] = `
 <div>
   <div
-    class="navbar"
+    class="bg-white shadow-lg"
   >
     <div
-      class="navbar__header"
+      class="xl:container xl:mx-auto sm:flex sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0"
     >
-      <a
-        class="navbar__header__title"
-        href="/"
+      <div>
+        <a
+          class="text-purple-700 font-bold uppercase text-center"
+          href="/"
+        >
+          Diary of a Web Developer
+        </a>
+      </div>
+      <div
+        class="px-2 pt-2 pb-4 sm:flex sm:p-0"
       >
-        Diary of a Web Developer
-      </a>
-    </div>
-    <div
-      class="navbar__links"
-    >
-      <a
-        href="https://github.com"
-      >
-        Projects
-      </a>
-      <a
-        href="https://resume.com"
-      >
-        Resume
-      </a>
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://github.com/Stavrospanakakis"
+        >
+          Projects
+        </a>
+        <a
+          class="mt-1 block px-2 py-1 text-purple-700 rounded hover:text-purple-900 sm:mt-0 sm:ml-2 hidden md:flex"
+          href="https://stavrospanakakis.com/cv/"
+        >
+          Resume
+        </a>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render 1`] = `
+<div>
+  <div
+    class="block sm:flex sm:justify-center h-10 leading-10 mt-10 w-full border-solid border-2 border-gray-200"
+  >
+    <p
+      class="text-purple-600 px-4 text-center"
+    >
+      © Copyright 2020
+    </p>
+  </div>
+</div>
+`;

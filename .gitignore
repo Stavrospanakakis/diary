@@ -35,7 +35,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+tailwind.js
+src/assets/main.css
 # Typescript v1 declaration files
 typings/
 

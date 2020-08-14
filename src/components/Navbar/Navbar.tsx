@@ -4,25 +4,28 @@ import NavButton from './navButton'
 import NavbarData from '../../data/Navbar'
 
 const Navbar: React.FC = () => {
-    const {title, pages} = NavbarData
-    return (
-        <div className="navbar">
-            <div className="navbar__header">
-                <a href='/' className="navbar__header__title">
-                    {title}
-                </a>
-            </div>
-            <div className="navbar__links">
-                {pages.map((page, index) => 
-                    <NavButton
-                        key={index} 
-                        href={page.href}
-                        name={page.name}
-                    />
-                )}
-            </div>
-        </div>
-    )
+	const {title, pages} = NavbarData
+	return (
+		<div className='bg-white shadow-lg'>
+			<div className='xl:container xl:mx-auto sm:flex sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0'>
+				<div>
+					<a href='/' className='text-purple-700 font-bold uppercase text-center'>
+						{title}
+					</a>
+				</div>
+				<div className='px-2 pt-2 pb-4 sm:flex sm:p-0'>
+					{pages.map((page, index) =>
+						<NavButton
+							key={index}
+							href={page.href}
+							name={page.name}
+						/>
+					)}
+				</div>
+			</div>
+		</div>
+
+	)
 }
 
 export default Navbar
