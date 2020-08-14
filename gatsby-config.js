@@ -2,8 +2,9 @@ module.exports = {
 	siteMetadata: {
 		title: 'Diary of a Web Developer',
 		description: 'Writing my personal thoughts and experiances about Web Development',
-		author: '@stavepan',
-		siteUrl: 'https://diary-gatsby-theme.netlify.app'
+		image: 'profile.jpg', 
+		twitterUsername: '@stavepan',
+		siteUrl: 'https://diary.stavrospanakakis.com/'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
