@@ -15,6 +15,14 @@ module.exports = {
 		'gatsby-transformer-json',
 		'gatsby-plugin-sitemap',
 		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://www.diary.stavrospanakakis.com',
+				sitemap: 'https://www.diary.stavrospanakakis.com/sitemap.xml',
+				policy: [{ userAgent: '*', allow: '/' }]
+			}
+		},
+		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				name: 'gatsby-starter-default',

@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
 	return (
 		<div className='bg-white shadow-lg'>
 			<div className='xl:container xl:mx-auto sm:flex sm:items-center sm:px-4 sm:py-3 flex items-center justify-center md:justify-between px-4 py-3 sm:p-0'>
-				<div>
-					<a href='/' className='text-purple-700 font-bold uppercase text-center'>
+				<div className='text-center'>
+					<a href='/' className='text-purple-700 font-bold uppercase'>
 						{title}
 					</a>
 				</div>
