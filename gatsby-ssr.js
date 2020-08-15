@@ -1,16 +1,21 @@
-var React = require('react')
-
-exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
-	/**
-     * @type {any[]} headComponents
-     */
+exports.onPreRenderHTML = function onPreRenderHTML({
+	getHeadComponents,
+	replaceHeadComponents,
+}) {
 	const headComponents = getHeadComponents()
-
 	headComponents.sort((a, b) => {
-		if (a.props && a.props['data-react-helmet']) {
+		if (a.type === b.type || (a.type !== 'style' && b.type !== 'style')) {
 			return 0
 		}
-		return 1
+
+		if (a.type === 'style') {
+			return 1
+		} else if (b.type === 'style') {
+			return -1
+		}
+
+		return 0
 	})
+
 	replaceHeadComponents(headComponents)
 }
