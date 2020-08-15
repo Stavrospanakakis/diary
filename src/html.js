@@ -13,6 +13,10 @@ export default function HTML(props) {
 				/>
 				<link rel='icon' href={'favicon.png'} type='image/x-icon' />
 				{props.headComponents}
+				<link
+					rel="stylesheet"
+					href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+				/>
 			</head>
 			<body {...props.bodyAttributes}>
 				{props.preBodyComponents}
@@ -22,10 +26,6 @@ export default function HTML(props) {
 					dangerouslySetInnerHTML={{ __html: props.body }}
 				/>
 				{props.postBodyComponents}
-				<link
-					rel="stylesheet"
-					href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-				/>
 			</body>
 		</html>
 	)
