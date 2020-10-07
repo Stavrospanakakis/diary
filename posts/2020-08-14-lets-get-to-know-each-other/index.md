@@ -33,7 +33,6 @@ but MongoDB feels really awesome too!
 
 <strong>What do I do except from University?</strong>
 <ul>
-<li style='list-style:disc;'>I work to Computational Modeling Laboratory of Ionian University for analyzing data about paths and finding the most efficient ones.</li>
 <li style='list-style:disc;'>I recently joined Ionian IEEE Student Branch as a Public Relationships member and a contributor to its <a style='color:purple;'href='https://github.com/ionian-uni-ieee/ieeesb-app'>Web App</a>.</li>
 <li style='list-style:disc;'>I am a member of the IT Team of <a style='color:purple;'href='https://tedxionianuniversity.com'>TEDx Ionian University</a> responsible for its website and configuring the livestream platform for the main virtual event.</li>
 </ul>
